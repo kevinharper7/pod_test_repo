@@ -19,4 +19,4 @@ print((9/5 * 5) + 32)
 #tying to find out what's hotter 32.2 or 85.1 Fahrenheit
 print((85.1 - 32) * 5/9)
 
-#30.2 is hotter than 85.1 Fahrenheit
+#30.2 is hotter than 85.1 Fahrenheit.
