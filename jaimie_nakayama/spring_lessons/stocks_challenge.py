@@ -30,39 +30,32 @@ elif ...
 else ...
 '''
 
-if stock == "amzn":
-    num_of_stocks = (savings // amazon) 
-
-elif stock == "aapl":
-    num_of_stocks_apple = (savings // apple)
+if stock == 'amzn':
+    price = amazon
+    num_of_stocks = (savings // price)
 
 elif stock == "fb":
-    num_of_stocks_fb = (savings // fb)
+    price = fb
+    num_of_stocks = (savings // price)
+
+elif stock == "aapl":
+    price = apple
+    num_of_stocks = (savings // price)
 
 elif stock == "goog":
-    num_of_stocks_goog = (savings // google)
+    price = google
+    num_of_stocks = (savings // price)
 
 elif stock == "msft":
-    num_of_stocks_msft = (savings // msft)
+    price = msft 
+    num_of_stocks = (savings // price)
 
 else:
-    print("Not applicable!")
+    print("give me legit stock ticker")
 
 print("Challenge 3.2.3: Output for the user the result")
 # TODO: COnce you have calculated the number of stocks that can be purchased, print the result for the client. Result should be in a format like this:
 
 # Alex has $5000 in savings and he can buy 50 shares of Apple at the current price of $100.
 
-if stock == "amzn":
- print(f"{name} has {savings} in savings and he can buy {num_of_stocks} share of Amazon at the current price of $3000.")
-
-elif stock == "aapl":
- print(f"{name} has {savings} in savings and he can buy {num_of_stocks_apple} shares of Apple at the current price of $100.")
-
-elif stock == "fb":
- print(f"{name} has {savings} in savings and he can buy {num_of_stocks_fb} shares of Facebook at the current price of $250.")
-
-elif stock == "goog":
- print(f"{name} has {savings} in savings and he can buy {num_of_stocks_goog} shares of Google at the current price of $1400.")
-else:
- print(f"{name} has {savings} in savings and he can buy {num_of_stocks_msft} shares of Microsoft at the current price of $200.")
+print(f"{name} has {savings} in savings and he can buy {num_of_stocks} shares of {stock} at the current price of {price}.")
