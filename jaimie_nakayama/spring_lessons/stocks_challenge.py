@@ -8,8 +8,6 @@ fb = 250
 google = 1400
 msft = 200
 
-
-
 print("Challenge 3.2.1: Taking user input")
 # TODO: Write code to ask the client his name and save it to a variable.
 # TODO: Write code to ask the client his savings and save it to another variable.

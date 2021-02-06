@@ -1,8 +1,6 @@
 print("Challenge 3.1: Debug code snippets")
 #Debug each snippet in order
 
-print()
-
 print("Code Snippet 1:")
 
 u = 5
@@ -12,8 +10,6 @@ if u * v == 10:
     print(f"The product of {u} and {v} is 10")
 else:
     print(f"The product of {u} and v {v} is not 10")
-
-print()
 
 print("Code Snippet 2:")
 x = 15
@@ -29,9 +25,6 @@ elif (z > x and z < y):
 else:
     print("z is greater than y")
 
-
-print()
-
 print("Code Snippet 3:")
 
 #modify the comparison operator below so the assert statement passes
@@ -44,8 +37,6 @@ c = (a > b)
 print(f"The value of c is True since {a} is greater than {b}.")
 assert(c == True) #Do not change this line
 
-print()
-
 print("Code Snippet 4:")
 
 #modify exactly one boolean operator in the assignment of d, so that d evaluates to False
@@ -54,9 +45,6 @@ d = (5 < 7) and not (8 < 20)
 # TO DO: Explain how d is set to False in a print statement
 print("The value of d is False because both statements need to be true with the and operator") 
 assert(d == False) #Do not change this line
-
-print()
-
 
 print("Code Snippet 5:")
 
@@ -70,5 +58,4 @@ o = (m != n)
 print("The value of o is True since Python is case-sensitive.")
 assert(o == True) #Do not change this line
 
-print()
 print("CHALLENGE COMPLETE!")
