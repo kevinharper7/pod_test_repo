@@ -1,0 +1,6 @@
+# Why loops? What is a loop?
+    When we want to go through a bunch of tiems, or pieces of data, and do something
+    applying the same operation to many variables
+    "iteration or 'iteratice'codign
+
+Grocery_list = ["eggs", "carrots", "milk", "apples"]
