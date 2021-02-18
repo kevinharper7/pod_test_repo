@@ -1,4 +1,3 @@
-
 print("Challenge: Favourite Restaurants")
 
 print()
@@ -7,12 +6,12 @@ print("Question 1")
 
 '''
 Below is a dictionary consisting of details of 1 restaurant fetched from Yelp. 
+
 Go through the dictionary and print out the following 3 pieces of information about the restaurant: 
 1. The latitude and longitude of Four Barrel Coffee 
 2. The complete address of Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code. 
 3. The website of Four Barrel Coffee
 '''
-
 
 restaurant = {
     "name": "Four Barrel Coffee",
@@ -30,14 +29,18 @@ restaurant = {
     "transactions": ["pickup", "delivery"]
 }
 
-print(restaurant)
-
 # TODO: Write code to print the latitude and longitude of Four Barrel Coffee.
 # TODO: Write code to print the complete address of the Four Barrel Coffee, formatted as a string - it should include the address, city, state and the zip code.
 # TODO: Write code to print the URL of the website of Four Barrel Coffee.
 
+print(f'Latitude of Four Barrel Coffee: {restaurant["latitude"]}\nLongitude of Four Barrel Coffee: {restaurant["longitude"]}')
+
+print(f'The complete address of Four Barrel Coffee is {restaurant["address1"]}, {restaurant["city"]}, {restaurant["state"]} {restaurant["country"]} {restaurant["zip_code"]}')
+
+print(f'Website of Four Barrel Coffee: {restaurant["url"]}')
 
 print()
+
 
 print("Question 2")
 
@@ -59,16 +62,49 @@ restaurant_1  = {
 
 print()
 
+restaurant_1  = {
+    "name": "John's of 12th street",
+    "address" : "302 East 12th Street, New York, NY 10003",
+    "favourite_dish" : "Spaghetti Bolognese"
+    }
+
+
+restaurant_2  = {
+    "name": "Jackson Hole Burgers",
+    "address" : "521 Third Avenue, New York, NY 10016",
+    "favourite_dish" : "Seasoned Turkey Burger & Steak Fries"
+    }
+
+
+
+restaurant_3  = {
+    "name": "Shake Shack Midtown East",
+    "address" : "600 Third Avenue, New York, NY 10016",
+    "favourite_dish" : "Shack Burger 7 Cheese Fries"
+    }
+
+print(restaurant_1)
+print(restaurant_2)
+print(restaurant_3)
+
+print()
+
+
 print("Question 3")
+
 '''
 Imagine that any 1 of your most favourite restaurants stopped serving your favourite dish there. 
 Remove the 'favourite_dish' key value pair from that restaurant's dictionary
 '''
 
 # TODO: Remove the 'favourite_dish' key-value pair from one of your 3 restaurants
+restaurant_1.pop('favourite_dish')
+
 # TODO: Print the new dictionary. The new dictionary should only contain 'name' and 'address' for that restaurant
+print(restaurant_1)
 
 print()
+
 
 print("Question 4")
 '''
@@ -77,7 +113,15 @@ Update just this value in that restaurant's dictionary
 '''
 
 # TODO: Update the address field of 1 restaurant 
+restaurant_2['address'] = '240 East 39th Street, New York, NY, 10016'
+
+
 # TODO: Print the new address of the restaurant by accessing that field of the restaurant's dictionary
+print(restaurant_2['address'])
+
+
 # TODO: Print the updated dictionary.
+print(restaurant_2)
 
 print()
+
