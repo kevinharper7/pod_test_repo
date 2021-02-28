@@ -10,16 +10,17 @@ num_people_int = int(num_people_str)
 
 # CHALLENGE 1.3:
 # Get bill amount and convert from string to float
-bill_total_str = input("Type the amount to be split (e.g. 24.57, 10, or 80.5): ")
+bill_total_str = input("Type the amount to be split before tax(e.g. 24.57, 10, or 80.5): ")
 bill_total_float = float(bill_total_str)
-
+bill_total_tip = bill_total_float + bill_total_float * .1
+print(f'The total for your bill including tax is ${bill_total_tip}')
 # Get percentage to tip and convert from string to float
 tip_percent_str = input("Type the tip percent (e.g. 15 or 18.5): ")
 tip_percent_float = float(tip_percent_str)
 
 # CHALLENGE 1.4:
 # Confirm input with user
-print(f"You are splitting ${bill_total_float} among {num_people_int} people with a {tip_percent_float}% tip.")
+print(f"You are splitting ${bill_total_tip} among {num_people_int} people with a {tip_percent_float}% tip.")
 confirm_input = input("Type y if this input is correct, or any other key to quit: ")
 correct_input = confirm_input == 'y'
 
@@ -36,7 +37,7 @@ if correct_input == False:
 
 # CHALLENGE 1.5:
 # Split bill and print amount
-amount_per_person = bill_total_float / num_people_int
+amount_per_person = bill_total_tip / num_people_int
 tip_per_person = amount_per_person * tip_percent_float/100
 total_per_person = amount_per_person + tip_per_person
 print(f"Everyone should pay ${total_per_person}!")
