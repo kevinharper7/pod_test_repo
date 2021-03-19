@@ -92,6 +92,7 @@ print(np.random.rand(1))
 # 6B. Comment your code in 6A to convince yourself you understand how it works
 '''
 I imported numpy and called the .random.rand() function which generates a random number between 0-1.
+Source: https://www.kite.com/python/examples/186/numpy-construct-an-array-of-random-values-between-0-and-1
 
 '''
 Nice job! Hopefully after doing this challenge you feel a bit more ready to be able to search out new code solutions.
