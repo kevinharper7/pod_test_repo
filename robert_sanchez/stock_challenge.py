@@ -1,3 +1,4 @@
+# TODO
 print("Challenge 3.2: Playing with the stock market")
 print()
 # Creating variables to store the current (approximate) market price of these 5 companies - Amazon, Apple, Facebook, Google and Microsoft.
