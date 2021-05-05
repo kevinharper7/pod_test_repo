@@ -56,7 +56,7 @@ print('PART 2\n')
 # TODO define the deposit() function here and make sure it works
 def deposit(account, amount):
     account['balance'] = account['balance'] + amount
-    print(f'Your new account balance is: {account["balance"]}.')
+    print(f'You deposited: {amount} into your account. Your new account balance is: {account["balance"]}.')
 
 # Testing the code.
 deposit(my_account, 20.00)
@@ -82,18 +82,18 @@ print('PART 3\n')
 def validate(account):
     logged_in = False
     while logged_in == False:
-        print('Validating account information:')
-        username = input('Please enter your username: ')
+        print('Now validating account information:')
+        username = input('Please re-enter your username: ')
 
         print('\n')
-        password = input('Please enter your password: ')
+        password = input('Please re-enter your password: ')
 
         print('\n')
         if username == account['username'] and password == account['password']:
             logged_in = True
-            print('You are now logged in!')
+            print('Thank you. You are now logged in!')
         else:
-            print('You have entered an incorrect account/password combination, please try again.')
+            print('You have entered an incorrect account username/password combination, please try again.')
 
 
 def withdraw(account, amount):
@@ -105,7 +105,7 @@ def withdraw(account, amount):
 
 
 # Testing the code.
-withdraw(my_account, 10.00)
+withdraw(my_account, 200.00)
 print(my_account)
 print('\n')
 
